@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product API Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+        
+        <!-- Section to view products -->
+        <section id="view-products">
+            <h2>View Products</h2>
+            <button id="load-products">Load Products</button>
+            <div id="products-list"></div>
+        </section>
+
+        <!-- Section to add a new product -->
+        <section id="add-product">
+            <h2>Add New Product</h2>
+            <form id="product-form">
+                <label for="carName">Car Name:</label>
+                <input type="text" id="carName" name="carName" required>
+                
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" id="manufacturer" name="manufacturer" required>
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+                
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+
+        <!-- Section to update a product -->
+        <section id="update-product">
+            <h2>Update Product</h2>
+            <form id="update-form">
+                <label for="update-id">Product ID:</label>
+                <input type="number" id="update-id" name="update-id" required>
+                
+                <label for="update-carName">Car Name:</label>
+                <input type="text" id="update-carName" name="update-carName" required>
+                
+                <label for="update-manufacturer">Manufacturer:</label>
+                <input type="text" id="update-manufacturer" name="update-manufacturer" required>
+
+                <label for="update-year">Year:</label>
+                <input type="number" id="update-year" name="update-year" required>
+                
+                <button type="submit">Update Product</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
